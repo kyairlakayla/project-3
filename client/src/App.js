@@ -1,24 +1,15 @@
 import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
-import logo from './logo.svg';
 import './App.css';
+import Navigation from './components/Navigation/index';
+import Hero from './components/Hero/index';
+import Recipe from './components/Recipe/index'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navigation></Navigation>
+      <Hero></Hero>
+      <Recipe></Recipe>
     </div>
   );
 }
