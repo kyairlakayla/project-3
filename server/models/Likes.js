@@ -4,7 +4,8 @@ const likesSchema = new Schema (
     {
         id: {
             type: Number,
-            required: true
+            required: true,
+            unique: true 
         },
         username: {
             type: String,
