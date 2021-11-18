@@ -1,7 +1,9 @@
 import React from 'react'
+import styled from "styled-components";
 
 function Navigation() {
     return (
+        <StyledNavigation>
         <div>
             <nav>
                 <img src="" alt="Recipe" />
@@ -20,7 +22,15 @@ function Navigation() {
                 </ul>
             </nav>
         </div>
+        </StyledNavigation>
     )
 }
+
+const StyledNavigation = styled.section`
+ nav {
+     background-color: yellow;
+     padding-bottom: 0px
+ }
+`
 
 export default Navigation

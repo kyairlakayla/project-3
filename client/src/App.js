@@ -3,6 +3,8 @@ import './App.css';
 import Navigation from './components/Navigation/index';
 import Hero from './components/Hero/index';
 import Recipe from './components/Recipe/index'
+import Single from "./components/Single";
+import Saved from "./components/Saved";
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <Navigation></Navigation>
       <Hero></Hero>
       <Recipe></Recipe>
+      <Single></Single>
+      <Saved></Saved>
     </div>
   );
 }
