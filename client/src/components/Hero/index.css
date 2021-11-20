@@ -1,0 +1,24 @@
+section.hero {
+  height: 90vh;
+  margin-top: 0 !important;
+  border: none !important;
+  background-image: url(../../assets/images/hero-pic.jpg) !important;
+  background-position: center !important;
+  background-size: cover !important;
+  position: relative;
+}
+
+section.hero h1 {
+  font-size: 4.125rem !important;
+}
+section.hero .ui.input {
+  max-width: initial !important;
+  width: 50% !important;
+}
+section.hero i.icon {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    color: #fff !important;
+    cursor: pointer;
+}
