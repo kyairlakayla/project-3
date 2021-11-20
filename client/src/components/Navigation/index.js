@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 
 function Navigation() {
@@ -6,7 +7,6 @@ function Navigation() {
             <nav>
                 <img src="" alt="Recipe" />
                 <ul>
-                    {/* eslint-disable-next-line */}
                     <li><a href="#">Recipes</a></li>
                     <li><a href="#">Quick & Easy</a></li>
                     <li><a href="Videos">Videos</a></li>
@@ -16,7 +16,7 @@ function Navigation() {
                 <ul>
                     <li><a href="">Saved Recipes</a></li>
                     <li><a href="">Donate</a></li>
-                    <li> <a href="">Account</a> </li>
+                    <li><a href="">Account</a> </li>
                 </ul>
             </nav>
         </div>
