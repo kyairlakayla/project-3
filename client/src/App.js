@@ -1,12 +1,12 @@
 // import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
-import './App.css';
-import "semantic-ui-css/semantic.min.css"
-import Navigation from './components/Navigation/index';
-import Hero from './components/Hero/index';
-import Recipe from './components/Recipe/index';
-import Single from './components/Single';
-import Saved from './components/Saved';
-import Footer from './components/Footer/index';
+import "./App.css";
+import "semantic-ui-css/semantic.min.css";
+import Navigation from "./components/Navigation/index";
+import Hero from "./components/Hero/index";
+import Recipe from "./components/Recipe/index";
+import Single from "./components/Single";
+import Saved from "./components/Saved";
+import Footer from "./components/Footer/index";
 
 function App() {
   return (
@@ -25,7 +25,6 @@ function App() {
       <footer className="bottom-section">
         <Footer></Footer>
       </footer>
-      
     </>
   );
 }

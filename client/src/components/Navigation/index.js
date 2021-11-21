@@ -10,7 +10,7 @@ function Navigation() {
           <Menu.Item>
             <Icon name="food" size="large" />
           </Menu.Item>{" "}
-          < Menu.Item name = "Recipes" / >
+          <Menu.Item name="Recipes" />
           <Menu.Item name="Quick & Easy" />
           <Menu.Item name="Videos" />
           <Menu.Item name="About" />
