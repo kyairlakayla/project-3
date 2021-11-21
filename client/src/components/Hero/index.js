@@ -16,8 +16,9 @@ function Hero() {
 }
 
 const StyledHero = styled.section`
+    background-color: #FBF46D;
  .hero {
-     background-color: yellow;
+     
  }
 `
 
