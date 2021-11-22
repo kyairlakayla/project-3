@@ -1,4 +1,4 @@
-const { Comments} = require('../models');
+const { User, Comments, Likes } = require('../models');
 //const { AuthenticationError } = require('apollo-server-express');
 
 const resolvers = {
@@ -24,7 +24,17 @@ const resolvers = {
                .populate('comments')
                .populate('likes');
             },
-      }
+      },
+      Mutation: {
+        addUser: async (parent, args) => {
+            const user = await User.create(args);
+          
+            return user;
+        },
+        login: async () => {
+    
+        }
+      }  
 }
 
 module.exports = resolvers;

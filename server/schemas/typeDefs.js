@@ -5,7 +5,6 @@ type User {
     _id: ID
     username: String
     email: String
-    friendCount: Int
     comments: [Comments]
     likes: [Likes]
   }
@@ -29,6 +28,10 @@ type Query {
     likes(username: String!): [Likes]
 
 }
+type Mutation {
+    login(email: String!, password: String!): User
+    addUser(username: String!, email: String!, password: String!): User
+  }
 `;
 
 module.exports = typeDefs;
