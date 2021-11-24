@@ -2,7 +2,6 @@ import React from "react";
 import { Header, Container } from "semantic-ui-react";
 
 function Single(props) {
-  //  const ingredients =  props.detail.extendedIngredients;
   return (
     <>
       <Container>
