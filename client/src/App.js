@@ -1,4 +1,3 @@
-// import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 import "./App.css";
 import "semantic-ui-css/semantic.min.css";
 import Navigation from "./components/Navigation/index";

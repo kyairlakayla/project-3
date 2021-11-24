@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Header, Input, Icon } from "semantic-ui-react";
+import {Header, Input, Icon } from "semantic-ui-react";
 import "./index.css";
 
 function Hero(props) {
