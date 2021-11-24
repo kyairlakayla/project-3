@@ -4,8 +4,10 @@ import { Segment, Menu, Icon, Dropdown } from "semantic-ui-react";
 import LoginModal from "../Login";
 import SignupModal from "../Signup";
 import DonateModal from "../Donate";
+import generateRandomRecipe from '../../utils/js/random-recipes'
 
 function Navigation() {
+  generateRandomRecipe();
   return (
     <>
       <Segment inverted>
@@ -13,7 +15,7 @@ function Navigation() {
           <Menu.Item>
             <Icon name="food" size="large" />
           </Menu.Item>{" "}
-          <Menu.Item name="Recipes" />
+          <Menu.Item name="Recipes"/>
           <Menu.Item name="Quick & Easy" />
           <Menu.Item name="Videos" />
           <Menu.Item name="About" />

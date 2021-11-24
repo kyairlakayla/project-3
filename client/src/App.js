@@ -11,7 +11,7 @@ import { useState } from "react";
 
 function App() {
 
-  const [search, setSearch] = useState("burger");
+  const [search, setSearch] = useState("food");
   const [detail, setDetail] = useState(null);
 
   const getDetail = (id) => {

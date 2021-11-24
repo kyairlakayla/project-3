@@ -1,6 +1,6 @@
-export function generateRecipe() {
+const generateRandomRecipe = function () {
   fetch(
-    "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/search?query=burger&number=12",
+    "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/random?number=12",
     {
       method: "GET",
       headers: {
@@ -11,11 +11,15 @@ export function generateRecipe() {
     }
   )
     .then((response) => {
-      response.json().then( data => {
+      response.json().then (function (data) {
         console.log(data);
       })
+      
     })
     .catch((err) => {
       console.error(err);
     });
-}
+};
+
+export default generateRandomRecipe;
+

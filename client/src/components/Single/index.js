@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "semantic-ui-react";
+import { Card, Container, Message } from "semantic-ui-react";
 
 function Single(props) {
   console.log("single +++", props);
