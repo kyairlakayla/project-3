@@ -3,6 +3,7 @@ import React from "react";
 import { Segment, Menu, Icon, Dropdown } from "semantic-ui-react";
 import LoginModal from "../Login";
 import SignupModal from "../Signup";
+import DonateModal from "../Donate";
 
 function Navigation() {
   return (
@@ -18,7 +19,7 @@ function Navigation() {
           <Menu.Item name="About" />
           <Menu.Menu position="right">
             <Menu.Item name="Saved Recipes" />
-            <Menu.Item name="Donate" />
+            <DonateModal>Donate</DonateModal>
             <Dropdown item text={<Icon name="user" />}>
               <Dropdown.Menu>
                 <Dropdown.Item>
