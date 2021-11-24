@@ -1,85 +1,42 @@
 import React from "react";
-import { Card } from "semantic-ui-react";
+import { Image, Card, Icon, Header, Grid, Container } from "semantic-ui-react";
 import "./index.css";
 
 function Saved() {
+  const randomSaves = [1, 2, 3, 4, 5, 6, 7, 8];
   return (
     <section id="saved">
-      <h3>Saved Recipe</h3>
-      <div class="ui four cards">
-        <div class="card">
-          <div class="image">
-            <img />
-          </div>
-          <div class="extra">
-            Rating:
-            <div class="ui star rating" data-rating="4"></div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="image">
-            <img />
-          </div>
-          <div class="extra">
-            Rating:
-            <div class="ui star rating" data-rating="2"></div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="image">
-            <img />
-          </div>
-          <div class="extra">
-            Rating:
-            <div class="ui star rating" data-rating="3"></div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="image">
-            <img />
-          </div>
-          <div class="extra">
-            Rating:
-            <div class="ui star rating" data-rating="4"></div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="image">
-            <img />
-          </div>
-          <div class="extra">
-            Rating:
-            <div class="ui star rating" data-rating="3"></div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="image">
-            <img />
-          </div>
-          <div class="extra">
-            Rating:
-            <div class="ui star rating" data-rating="3"></div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="image">
-            <img />
-          </div>
-          <div class="extra">
-            Rating:
-            <div class="ui star rating" data-rating="4"></div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="image">
-            <img />
-          </div>
-          <div class="extra">
-            Rating:
-            <div class="ui star rating" data-rating="4"></div>
-          </div>
-        </div>
-      </div>
+      <Container>
+        <Header textAlign="center" size="large">
+          Saved Recipe
+        </Header>
+        <Grid>
+          {randomSaves.map((i) => (
+            <Grid.Column mobile={16} tablet={8} computer={4} key={i}>
+              <Card>
+                <Image
+                  src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?quality=90&resize=556,505"
+                  wrapped
+                  ui={false}
+                />
+                <Card.Content>
+                  <Card.Header>Daniel</Card.Header>
+                  <Card.Meta>Joined in 2016</Card.Meta>
+                  <Card.Description>
+                    Daniel is a comedian living in Nashville.
+                  </Card.Description>
+                </Card.Content>
+                <Card.Content extra>
+                  <a>
+                    <Icon name="user" />
+                    10 Friends
+                  </a>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+          ))}
+        </Grid>
+      </Container>
     </section>
   );
 }
