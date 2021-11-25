@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { Image, Card, Icon, Header, Grid, Container } from "semantic-ui-react";
 import "./index.css";
