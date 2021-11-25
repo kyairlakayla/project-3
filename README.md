@@ -33,7 +33,7 @@ npm start
 
 ### Heroku Deployed Website
 
-<https://fierce-earth-31013.herokuapp.com/>
+<https://tranquil-tundra-91297.herokuapp.com/>
 
 ### Built With
 
@@ -54,4 +54,4 @@ npm start
 - Shane Bramble-Wade
 - Shannon Posey
 
-### ©️2021 Surpreme Recipe, Inc
+### ©️2021 Supreme Recipe, Inc
