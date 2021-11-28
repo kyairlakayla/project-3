@@ -15,7 +15,7 @@ In this project we create a full stack online recipe website. We used the MERN w
 - Clone the repository
 
 ```
-git clone <git@github.com:shanebramble/project3.git>
+git clone <git@github.com:shanebramble/supreme-recipes.git>
 ```
 
 - Install dependencies
@@ -33,7 +33,7 @@ npm start
 
 ### Heroku Deployed Website
 
-<https://tranquil-tundra-91297.herokuapp.com/>
+https://supreme-recipes.herokuapp.com
 
 ### Built With
 
